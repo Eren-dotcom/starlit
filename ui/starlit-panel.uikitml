@@ -1,0 +1,50 @@
+<!-- Starlit panel — Horizon kit, dark scheme (iwsdk.config.json). -->
+<style>
+  .panel-root { flex-direction: column; width: 430px; }
+  .panel-content { flex-direction: column; gap: 7px; padding: 22px; }
+  .eyebrow { color: #6b5a00; font-size: 14px; font-weight: 700; letter-spacing: 1.4px; }
+  .eyebrow:dark { color: #f5d90a; }
+  .heading { color: #1c1d20; font-size: 30px; font-weight: 700; line-height: 36px; }
+  .heading:dark { color: #fafaf7; }
+  .body { color: #3a3b40; font-size: 20px; line-height: 27px; }
+  .body:dark { color: #dddfe3; }
+  .button { justify-content: flex-start; margin-left: 22px; margin-right: 22px; margin-bottom: 12px; }
+  .button-label { transform-translate-y: 1px; }
+  .last { margin-bottom: 22px; }
+</style>
+<Panel class="panel-root">
+  <div class="panel-content">
+    <div class="eyebrow">STARLIT</div>
+    <div class="heading">Bring back the stars</div>
+    <div class="body">The stars fell into your room. They are resting on your furniture, waiting.</div>
+    <div class="body">Pinch a fallen star, carry it to the glowing frame, and put the sky back - one constellation at a time.</div>
+    <div id="progress-text" class="body">Skies restored 0 · Total 0</div>
+  </div>
+  <Button id="xr-button" class="button">
+    <ButtonIcon>
+      <RectangleGoggles></RectangleGoggles>
+    </ButtonIcon>
+    <ButtonLabel class="button-label">Enter XR</ButtonLabel>
+  </Button>
+  <Button id="exit-button" class="button" style="display: none">
+    <ButtonIcon>
+      <LogIn></LogIn>
+    </ButtonIcon>
+    <ButtonLabel class="button-label">Exit to Browser</ButtonLabel>
+  </Button>
+  <Button id="next-button" class="button">
+    <ButtonLabel class="button-label">Next Constellation</ButtonLabel>
+  </Button>
+  <Button id="replay-button" class="button">
+    <ButtonLabel class="button-label">Replay Constellation</ButtonLabel>
+  </Button>
+  <Button id="undo-button" class="button">
+    <ButtonLabel class="button-label">Undo Last Placement</ButtonLabel>
+  </Button>
+  <Button id="sound-button" class="button">
+    <ButtonLabel id="sound-label" class="button-label">Sound: On</ButtonLabel>
+  </Button>
+  <Button id="big-button" class="button last">
+    <ButtonLabel id="big-label" class="button-label">Big Targets: Off</ButtonLabel>
+  </Button>
+</Panel>

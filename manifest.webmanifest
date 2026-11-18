@@ -1,0 +1,8 @@
+{
+  "name": "Starlit — Bring Back the Stars",
+  "short_name": "Starlit",
+  "display": "standalone",
+  "background_color": "#0a0e26",
+  "theme_color": "#0a0e26",
+  "start_url": "."
+}
